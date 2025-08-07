@@ -28,7 +28,7 @@ LTspice · Schematic Capture (Altium Designer) · Analog Circuit Design · PCB S
 
 ## Block Diagram
 
-![Block Diagram](images/block_diagram-m0.png)
+![Block Diagram](images/block-diagram-m0.png)
 
 <p align="center"><b>Figure 1:</b> Color-coded block diagram with explicit feedback and test point labeling. System flow, feedback, and measurement location are shown for hardware validation.</p>
 
