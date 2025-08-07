@@ -1,4 +1,4 @@
-# Linear Voltage Regulator – Schematic Capture, Simulation, Assembly, and Validation
+# Linear Voltage Regulator : Schematic Capture, Simulation, Assembly, and Validation
 
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -11,9 +11,18 @@
 LTspice · Schematic Capture (Altium Designer) · Analog Circuit Design · PCB Soldering · Oscilloscope & Multimeter Validation · Test Point Measurement · Simulation-to-Lab Correlation · Git
 
 ---
+## **Results Summary**
+
+> Output: 5.000 V ± 20 mV under 33 Ω load  
+> Ripple: <100 mVpp  
+> AC RMS noise: <20 mV  
+> Matches LTspice simulation under steady-state
+
+---
 
 ## Table of Contents
 
+- [Repo Structure](#repo-structure)
 - [Block Diagram](#block-diagram)
 - [Schematic & Simulation](#schematic--simulation)
 - [PCB Assembly & Test Points](#pcb-assembly--test-points)
@@ -25,6 +34,16 @@ LTspice · Schematic Capture (Altium Designer) · Analog Circuit Design · PCB S
 - [Contact](#contact)
 
 ---
+## 📁 Repo Structure
+
+```bash
+linear-voltage-regulator-pcb/
+├── hardware/       # Altium schematics & PCB layout
+├── docs/           # LTspice simulation files
+├── images/         # Figures for README
+├── LICENSE
+└── README.md
+```
 
 ## Block Diagram
 
@@ -40,8 +59,8 @@ LTspice · Schematic Capture (Altium Designer) · Analog Circuit Design · PCB S
 |:---------------------------------:|:------------------------------------:|
 | ![Figure 1](images/figure-1.png) | ![Figure 2](images/figure-4.png) |
 
-<p align="center"><b>Figure 1:</b> Regulator circuit schematic in LTspice.<br>
-<b>Figure 4:</b> Simulated power supply input schematic in LTspice.</p>
+<p align="center"><b>Figure 2:</b> Regulator circuit schematic in LTspice.<br>
+<b>Figure 3:</b> Simulated power supply input schematic in LTspice.</p>
 
 ---
 
@@ -51,8 +70,8 @@ LTspice · Schematic Capture (Altium Designer) · Analog Circuit Design · PCB S
 |:------------------------------------:|:-----------------------------------:|
 | ![Figure 3](images/figure-5.png) | ![Figure 4](images/figure-6.png) |
 
-<p align="center"><b>Figure 5:</b> Output with 5000Ω load shows voltage instability (no continuous DC).<br>
-<b>Figure 6:</b> Regulator output waveform after connecting to simulated power supply.</p>
+<p align="center"><b>Figure 4:</b> Output with 5000Ω load shows voltage instability (no continuous DC).<br>
+<b>Figure 5:</b> Regulator output waveform after connecting to simulated power supply.</p>
 
 ---
 
@@ -60,7 +79,7 @@ LTspice · Schematic Capture (Altium Designer) · Analog Circuit Design · PCB S
 |:----------------------------------------:|
 | ![Figure 7](images/figure-7.png) |
 
-<p align="center"><b>Figure 7:</b> Input (rectified) vs output (regulated, 5V) voltages. Regulator maintains 5V during input peaks.</p>
+<p align="center"><b>Figure 6:</b> Input (rectified) vs output (regulated, 5V) voltages. Regulator maintains 5V during input peaks.</p>
 
 ---
 
@@ -73,8 +92,8 @@ LTspice · Schematic Capture (Altium Designer) · Analog Circuit Design · PCB S
 |:-------------------------------------:|:-------------------------------------:|
 | ![Figure 4](images/assembled_pcb.jpg) | ![Figure 5](images/test-point.png)    |
 
-<p align="center"><b>Figure 4:</b> Fully soldered linear regulator PCB.  
-<b>Figure 5:</b> Output test point for oscilloscope and multimeter validation (VOUT, 5V).</p>
+<p align="center"><b>Figure 7:</b> Fully soldered linear regulator PCB.  
+<b>Figure 8:</b> Output test point for oscilloscope and multimeter validation (VOUT, 5V).</p>
 
 ---
 
@@ -89,8 +108,8 @@ LTspice · Schematic Capture (Altium Designer) · Analog Circuit Design · PCB S
 |:--------------------------------------------:|:-----------------------------------------:|
 | ![Figure 6](images/osc-1.png)    | ![Figure 7](images/osc-2.png)  |
 
-<p align="center"><b>Figure 6:</b> Input (yellow) and output (blue) scope traces—output is stable 5V when input is sufficient.  
-<b>Figure 7:</b> Measured output Vpp and RMS—confirms low ripple and proper regulation.</p>
+<p align="center"><b>Figure 9:</b> Input (yellow) and output (blue) scope traces—output is stable 5V when input is sufficient.  
+<b>Figure 10:</b> Measured output Vpp and RMS—confirms low ripple and proper regulation.</p>
 
 ---
 
@@ -102,8 +121,8 @@ LTspice · Schematic Capture (Altium Designer) · Analog Circuit Design · PCB S
 |:----------------------------------------:|:--------------------------------------:|
 | ![Figure 8](images/5V-1.png)           | ![Figure 9](images/5V-2.png)    |
 
-<p align="center"><b>Figure 8:</b> Output set to 5.00V (no load).  
-<b>Figure 9:</b> Output remains 5.00V under 33Ω load.</p>
+<p align="center"><b>Figure 11:</b> Output set to 5.00V (no load).  
+<b>Figure 12:</b> Output remains 5.00V under 33Ω load.</p>
 
 ---
 
@@ -117,7 +136,7 @@ LTspice · Schematic Capture (Altium Designer) · Analog Circuit Design · PCB S
 |:----------------------------------------:|:--------------------------------------:|
 | ![Figure 12](images/ac-1.png)    | ![Figure 13](images/ac-2.png) |
 
-<p align="center"><b>Figures 10–13:</b> Validation of op-amp node voltages and AC RMS measurements for input and output.</p>
+<p align="center"><b>Figures 13–16:</b> Validation of op-amp node voltages and AC RMS measurements for input and output.</p>
 
 ---
 
