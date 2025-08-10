@@ -90,7 +90,7 @@ linear-voltage-regulator-pcb/
 
 | Assembled PCB (Top View)              | Output Test Point (Scope/DMM)         |
 |:-------------------------------------:|:-------------------------------------:|
-| ![Figure 4](images/assembled_pcb.jpg) | ![Figure 5](images/test-point.png)    |
+| ![Figure 4](images/pcb-final.jpg) | ![Figure 5](images/test-point.png)    |
 
 <p align="center"><b>Figure 7:</b> Fully soldered linear regulator PCB.  
 <b>Figure 8:</b> Output test point for oscilloscope and multimeter validation (VOUT, 5V).</p>
