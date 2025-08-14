@@ -182,9 +182,9 @@ linear-voltage-regulator-pcb/
 
 ## Contact
 
-[![LinkedIn: Hyeonji Jung](https://img.shields.io/badge/-Hyeonji%20Jung-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://linkedin.com/in/hyeonjijung-uoft)](https://linkedin.com/in/hyeonjijung-uoft)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Diana%20Jung-blue?logo=linkedin)](https://www.linkedin.com/in/dianajung-uoft/)
 
-**Hyeonji Jung**  
-junghyeonji254@gmail.com
+**Diana Jung**  
+dianajunguoftece@gmail.com
 
 ---
